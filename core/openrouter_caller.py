@@ -6,6 +6,8 @@ import requests
 from pathlib import Path
 from dotenv import load_dotenv
 
+from prompt.prompt_config import TEXT_TONE
+
 # 设置控制台编码
 if sys.platform == 'win32':
     import codecs
@@ -14,7 +16,6 @@ if sys.platform == 'win32':
 
 # 添加项目根目录到 Python 路径
 project_root = Path(__file__).parent.parent
-sys.path.insert(0, str(project_root))
 
 from prompt.narrative_architect import PROMPT
 
@@ -22,19 +23,16 @@ from prompt.narrative_architect import PROMPT
 env_path = project_root / '.env'
 load_dotenv(dotenv_path=env_path)
 
-def call_openrouter(topic: str, output_file: str = "output.json", model: str = "deepseek/deepseek-chat"):
+def call_openrouter(topic: str, output_file: str = "output.json", model: str = "gemini-3-pro-preview"):
     """
     调用 OpenRouter API 生成教学故事脚本
 
     Args:
         topic: 主题内容
         output_file: 输出的 JSON 文件路径
-        model: 使用的模型名称（默认：deepseek/deepseek-chat）
+        model: 使用的模型名称（默认：gemini-3-pro-preview）
                常用模型：
-               - deepseek/deepseek-chat (高性价比推理模型)
-               - deepseek/deepseek-reasoner (深度思考模型)
-               - anthropic/claude-3.5-sonnet (Claude Sonnet 3.5)
-               - openai/gpt-4-turbo (GPT-4 Turbo)
+               - gemini-3-pro-preview (高性价比推理模型)
     """
     # 配置 API
     api_key = os.getenv("OPENROUTER_API_KEY")
@@ -45,7 +43,7 @@ def call_openrouter(topic: str, output_file: str = "output.json", model: str = "
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     # 构建完整提示
-    full_prompt = f"{PROMPT}\n\n[主题]: {topic}"
+    full_prompt = PROMPT.format(TEXT_TONE=TEXT_TONE, TOPIC=topic)
 
     # 构建请求
     headers = {
@@ -140,7 +138,7 @@ if __name__ == "__main__":
     parser.add_argument('topic', nargs='?', default="大班第一学期数学：奖牌数一数，写一篇教案", help='教学主题')
     parser.add_argument('-o', '--output', default="narrative_output.json", help='输出文件路径')
     parser.add_argument('-m', '--model', default="google/gemini-3-pro-preview",
-                        help='模型名称（默认: deepseek/deepseek-chat）')
+                        help='模型名称（默认: gemini-3-pro-preview）')
 
     args = parser.parse_args()
 
