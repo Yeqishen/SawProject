@@ -1,23 +1,38 @@
 from prompt.prompt_config import VISUAL_STYLE_KEYWORDS
 
-# 模板 A：针对前景道具 (Assets)
-# 重点：强调 "die-cut sticker" (模切贴纸感) 和 "white border" (白边/轮廓)，这让转矢量图效果极佳。
+# -----------------------------------------------------------------------------
+# 风格核心配置：手绘油画卡通感
+# -----------------------------------------------------------------------------
+# 核心逻辑：
+# 1. 彻底移除 "Vector", "Die-cut", "Sticker" 等导致“硬边”和“塑料感”的词。
+# 2. 增加 "Oil painting", "Gouache", "Brushstrokes" 等强调材质的词。
+# 3. 满足你的需求：保留轮廓线 (Outline)，但要是自然的笔触线。
+
+# 模板 A：针对前景道具/角色 (Assets)
 ASSET_PROMPT_TEMPLATE = (
     "Item: {item_description}. "
-    "View: Front view, full shot. "
-    f"Art Style: {VISUAL_STYLE_KEYWORDS}. "
-    # 这里的 magic words 是 'die-cut sticker' 和 'strong outline'
-    "Setting: ISOLATED on a PURE WHITE background, die-cut sticker style with strong outline, no shadow, no reflection, clean edges. "
-    "Quality: 8k resolution, vector render, 2d."
+    "View: Front view, focus on the subject. "
+    # 风格定义：强调油画/水粉手绘质感
+    f"Art Style: {VISUAL_STYLE_KEYWORDS}, hand-painted oil painting cartoon style. "
+    # 轮廓线需求：使用 'Bold organic outline' (粗犷的有机轮廓) 替代 'Vector outline'
+    "Line Work: Bold, expressive organic outline surrounding the subject. "
+    # 背景需求：背景淡化或简单背景，不强求扣图
+    "Setting: Simple minimal background, soft faded colors, or isolated on white canvas. "
+    # 材质细节
+    "Texture: Rich oil paint texture, visible brushstrokes, vibrant colors. "
+    "Lighting: Soft, warm volumetric lighting. "
+    # 负向提示：防止出现照片写实或矢量图
+    "Negative: Photorealistic, 3d render, vector art, flat design, hard mechanical lines."
 )
 
 # 模板 B：针对背景图 (Backgrounds)
-# 重点：背景虽然有描边，但要避免过度复杂的线条干扰文字阅读。
 BACKGROUND_PROMPT_TEMPLATE = (
     "Scene: {scene_description}. "
-    f"Art Style: {VISUAL_STYLE_KEYWORDS}. "
-    "Composition: Wide angle, clear center area for text, plenty of negative space, balanced composition. "
-    "Line Work: Crisp line art, bold contours. "  # 强调线条清晰
-    "Lighting: Flat lighting, cheerful atmosphere. "
-    "Restriction: No text, no watermark, no blur, no realistic shading."
+    f"Art Style: {VISUAL_STYLE_KEYWORDS}, hand-painted oil painting illustration. "
+    "Composition: Wide angle, spacious, leaving center empty for text. "
+    # 渲染方式：强调绘画性
+    "Rendering: Painterly style with soft edges, oil painting texture on canvas. "
+    "Line Work: Subtle hand-drawn outlines on major elements. "
+    "Lighting: Atmospheric, dreamy, warm sunlight. "
+    "Restriction: No characters, no text, no watermarks, no sharp vector look."
 )

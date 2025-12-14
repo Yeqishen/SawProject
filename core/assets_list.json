@@ -1,0 +1,104 @@
+{
+  "backgrounds": [
+    {
+      "id": "scene_forest_podium",
+      "prompt": "Scene: A sunny forest clearing featuring three wooden stumps serving as a podium. Art Style: Hand-painted digital gouache illustration, whimsical children's book aesthetic. Atmosphere: Cheerful and bright with colorful bunting flags hanging between trees in the background. Composition: Wide angle, center area kept spacious and empty for text/gameplay, no characters, soft dappled sunlight."
+    },
+    {
+      "id": "scene_count_table",
+      "prompt": "Scene: A close-up, top-down view of a smooth, flat wooden table surface. Art Style: Hand-painted digital gouache texture, soft organic wood grain. Atmosphere: Warm and focused, with soft diagonal stripes of sunlight cast across the wood. Composition: Clean empty canvas for placing objects, blurred forest background at very edges."
+    },
+    {
+      "id": "scene_medal_rack",
+      "prompt": "Scene: A bamboo shelving unit leaning against a large sturdy tree trunk. Art Style: Hand-painted watercolor and gouache, organic lines. Atmosphere: Organized yet rustic forest setting. Composition: The shelves are empty (ready for items), framing the scene naturally, soft ambient forest lighting."
+    }
+  ],
+  "character_sprites": [
+    {
+      "id": "narrator_happy",
+      "prompt": "Character: A cute Giraffe teacher. Action: Smiling comfortably and looking at the viewer. Art Style: Hand-painted digital gouache, soft brushstrokes. Setting: Isolated on PURE WHITE background with a clean white die-cut border. Quality: High-resolution raster illustration."
+    },
+    {
+      "id": "narrator_explaining",
+      "prompt": "Character: A cute Giraffe teacher. Action: Gesturing with one hoof as if explaining a concept, mouth slightly open. Art Style: Hand-painted digital gouache. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "id": "narrator_waiting",
+      "prompt": "Character: A cute Giraffe teacher. Action: Standing patiently, observing effectively (idle pose). Art Style: Hand-painted digital gouache. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "id": "narrator_cheering",
+      "prompt": "Character: A cute Giraffe teacher. Action: Throwing hooves up in the air joyfully, eyes bright. Art Style: Hand-painted digital gouache. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "id": "narrator_thinking",
+      "prompt": "Character: A cute Giraffe teacher. Action: Hoof near chin, looking thoughtful or quizzical. Art Style: Hand-painted digital gouache. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "id": "narrator_surprised",
+      "prompt": "Character: A cute Giraffe teacher. Action: Eyes wide open, looking amazed. Art Style: Hand-painted digital gouache. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    }
+  ],
+  "interactive_props": [
+    {
+      "page_id": 3,
+      "asset_id": "prop_medal_gold_single",
+      "name_cn": "金牌 (单枚)",
+      "prompt": "Item: A single shiny Gold Medal with a red ribbon. Art Style: Hand-painted digital gouache icon, cute and chunky. Setting: Isolated on PURE WHITE background with a clean white die-cut border. No harsh vector lines."
+    },
+    {
+      "page_id": 4,
+      "asset_id": "prop_medal_gold_group",
+      "name_cn": "金牌堆",
+      "prompt": "Item: A small neat stack or group of 3 Gold Medals together. Art Style: Hand-painted digital gouache illustration. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 4,
+      "asset_id": "prop_number_3",
+      "name_cn": "数字木块 3",
+      "prompt": "Item: A smooth wooden toy block displaying the number '3'. Art Style: Hand-painted texture, organic edges. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 5,
+      "asset_id": "prop_medal_silver_single",
+      "name_cn": "银牌 (单枚)",
+      "prompt": "Item: A single shiny Silver Medal with a blue ribbon. Art Style: Hand-painted digital gouache icon. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 6,
+      "asset_id": "prop_medal_silver_group",
+      "name_cn": "银牌堆",
+      "prompt": "Item: A small neat stack or group of 4 Silver Medals together. Art Style: Hand-painted digital gouache illustration. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 6,
+      "asset_id": "prop_number_4",
+      "name_cn": "数字木块 4",
+      "prompt": "Item: A smooth wooden toy block displaying the number '4'. Art Style: Hand-painted texture, organic edges. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 7,
+      "asset_id": "prop_medal_bronze_single",
+      "name_cn": "铜牌 (单枚)",
+      "prompt": "Item: A single shiny Bronze Medal with a green ribbon. Art Style: Hand-painted digital gouache icon. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 8,
+      "asset_id": "prop_medal_bronze_group",
+      "name_cn": "铜牌堆",
+      "prompt": "Item: A small neat stack of 2 Bronze Medals together. Art Style: Hand-painted digital gouache illustration. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 8,
+      "asset_id": "prop_number_2",
+      "name_cn": "数字木块 2",
+      "prompt": "Item: A smooth wooden toy block displaying the number '2'. Art Style: Hand-painted texture, organic edges. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    },
+    {
+      "page_id": 11,
+      "asset_id": "prop_trophy_gold",
+      "name_cn": "金奖杯",
+      "prompt": "Item: A large, shiny Golden Trophy Cup. Art Style: Hand-painted digital gouache, festive and grand. Setting: Isolated on PURE WHITE background with a clean white die-cut border."
+    }
+  ]
+}
