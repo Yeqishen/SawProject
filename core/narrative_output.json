@@ -2,97 +2,163 @@
   {
     "page_id": 1,
     "section": "Intro",
-    "text": "森林运动会开始啦！",
-    "narration": "哇！小朋友们快看！森林里真热闹，一年一度的森林运动会开始啦！",
+    "text": "小朋友们好！欢迎来到森林运动会！",
+    "narration": "小朋友们好！欢迎来到森林运动会！大家都非常兴奋。",
     "interaction_type": "none",
-    "visual_description": "阳光明媚的森林体育场，色彩鲜艳。小兔子、小熊和小猴子穿着运动背心，正在跑道上开心地奔跑。空中飘着彩色的气球。"
+    "scene_id": "scene_forest_podium",
+    "main_character_emotion": "happy",
+    "visual_atmosphere_note": "森林中阳光明媚的空地，树木之间挂着五颜六色的彩旗，三个树桩组成了领奖台。",
+    "interactive_props_specs": null
   },
   {
     "page_id": 2,
-    "section": "Intro",
-    "text": "好多金光闪闪的奖牌！",
-    "narration": "比赛结束了，小动物们脖子上挂了好多奖牌，叮叮当当，真好听！",
+    "section": "Concept",
+    "text": "比赛结束了。看这些闪闪发光的奖牌！",
+    "narration": "比赛结束啦。快看这些闪闪发光的奖牌！但是我们需要数一数。你能帮忙吗？",
     "interaction_type": "none",
-    "visual_description": "近景特写。小兔子、小熊和小猴子站在一起，脖子上挂着不同数量的金牌。他们的表情非常自豪，脸上流着汗水但挂着笑容。"
+    "scene_id": "scene_forest_podium",
+    "main_character_emotion": "explaining",
+    "visual_atmosphere_note": "森林中阳光明媚的空地，树木之间挂着五颜六色的彩旗，三个树桩组成了领奖台。",
+    "interactive_props_specs": null
   },
   {
     "page_id": 3,
-    "section": "Intro",
-    "text": "谁的奖牌最多呢？",
-    "narration": "长颈鹿裁判长犯愁了，奖牌太多了，数都数不过来。小朋友，你能帮帮他吗？",
-    "interaction_type": "none",
-    "visual_description": "戴着眼镜的长颈鹿裁判拿着一个写字板，表情困惑地看着小动物们。屏幕下方出现一个大大的问号。"
+    "section": "Counting 1",
+    "text": "让我们数数金牌。点击它们！",
+    "narration": "让我们先从金牌开始。点击每一个来数数。一，二，三！",
+    "interaction_type": "click",
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "waiting",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: Gold Medal with red ribbon (1)",
+      "Prop: Gold Medal with red ribbon (2)",
+      "Prop: Gold Medal with red ribbon (3)"
+    ]
   },
   {
     "page_id": 4,
-    "section": "Core",
-    "text": "点一点：小兔子有几块？",
-    "narration": "我们先来看看小兔子。伸出你的小手指，点一点她的奖牌，大声数出来！",
-    "interaction_type": "click",
-    "visual_description": "小兔子站在画面左侧。右侧排列着5块胡萝卜形状的金牌。背景是绿色的草地。每一块金牌都很大，方便点击。"
+    "section": "Number Recognition 1",
+    "text": "太棒了！有3枚金牌。把数字拖到奖牌上。",
+    "narration": "数得真好！这里有三枚金牌。把数字“3”拖到奖牌那里。",
+    "interaction_type": "drag_and_drop",
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "cheering",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: A stack of 3 Gold Medals",
+      "Prop: Large wooden number block '3'"
+    ]
   },
   {
     "page_id": 5,
-    "section": "Core",
-    "text": "点一点：小熊有几块？",
-    "narration": "小熊也很棒！他的奖牌是蜂蜜罐形状的哦。快帮他数一数，一共有几块？",
+    "section": "Counting 2",
+    "text": "现在，数数银牌。点击它们！",
+    "narration": "现在，我们来数数银牌。一……二……三……四！边数边点击它们。",
     "interaction_type": "click",
-    "visual_description": "小熊站在画面右侧，憨厚地笑着。左侧排列着7块蜂蜜罐形状的金牌，排列得稍微有点乱，需要孩子仔细点击计数。"
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "waiting",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: Silver Medal with blue ribbon (1)",
+      "Prop: Silver Medal with blue ribbon (2)",
+      "Prop: Silver Medal with blue ribbon (3)",
+      "Prop: Silver Medal with blue ribbon (4)"
+    ]
   },
   {
     "page_id": 6,
-    "section": "Core",
-    "text": "把奖牌挂到架子上！",
-    "narration": "为了看得更清楚，我们把他们的奖牌整齐地挂起来吧！请把奖牌拖到架子上。",
+    "section": "Number Recognition 2",
+    "text": "四枚银牌！找到数字4。",
+    "narration": "四枚亮闪闪的银牌！你能找到数字“4”吗？把它拖到奖牌那里。",
     "interaction_type": "drag_and_drop",
-    "visual_description": "画面分两列。左边是散落的胡萝卜奖牌（5个），右边是散落的蜂蜜奖牌（7个）。中间是一个计分架，有上下两排挂钩。会有虚线提示拖拽位置。"
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "happy",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: A stack of 4 Silver Medals",
+      "Prop: Large wooden number block '4'"
+    ]
   },
   {
     "page_id": 7,
-    "section": "Core",
-    "text": "哪一排更长？",
-    "narration": "哇，排得真整齐！小朋友快看，哪一排的奖牌更长？是小兔子的，还是小熊的？点一点更长的那一排。",
+    "section": "Counting 3",
+    "text": "看看铜牌！有多少枚？",
+    "narration": "看看铜牌！有多少枚呢？让我们点一点数一数。只有一，二。",
     "interaction_type": "click",
-    "visual_description": "计分架上已经挂好了奖牌。上面是5个胡萝卜奖牌，下面是7个蜂蜜奖牌。可以明显看出下面的一排比上面的一排长。视觉上强调长度对比。"
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "waiting",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: Bronze Medal with green ribbon (1)",
+      "Prop: Bronze Medal with green ribbon (2)"
+    ]
   },
   {
     "page_id": 8,
-    "section": "Core",
-    "text": "帮小猴子捡奖牌！",
-    "narration": "哎呀！淘气的小猴子把奖牌弄撒了！快帮他把地上的奖牌捡进盒子里，一边捡一边数哦！",
+    "section": "Number Recognition 3",
+    "text": "两枚铜牌。拖动数字2！",
+    "narration": "这次只有两枚铜牌。请把数字“2”拖过来。",
     "interaction_type": "drag_and_drop",
-    "visual_description": "小猴子不好意思地挠头。地上散落着8块香蕉形状的奖牌。旁边有一个红色的收纳盒。画面充满动感。"
+    "scene_id": "scene_count_table",
+    "main_character_emotion": "thinking",
+    "visual_atmosphere_note": "特写视图：光滑平坦的木桌表面，柔和的阳光条纹洒在上面。",
+    "interactive_props_specs": [
+      "Prop: A stack of 2 Bronze Medals",
+      "Prop: Large wooden number block '2'"
+    ]
   },
   {
     "page_id": 9,
-    "section": "Core",
-    "text": "选出正确的数字！",
-    "narration": "小猴子一共有多少块奖牌呀？请你找出那个正确的数字宝宝，点点它！",
-    "interaction_type": "click",
-    "visual_description": "屏幕中央是装满香蕉奖牌的盒子。下方有三个大大的数字气泡，分别写着“6”、“8”、“10”。数字“8”的气泡稍微大一点，颜色更鲜艳。"
+    "section": "Sorting/Organizing",
+    "text": "让我们把奖牌藏在架子上。把它们拖上去！",
+    "narration": "让我们整理一下！把金牌拖到最上面，银牌拖到最下面。",
+    "interaction_type": "drag_and_drop",
+    "scene_id": "scene_medal_rack",
+    "main_character_emotion": "waiting",
+    "visual_atmosphere_note": "靠在树干上的竹制搁架单元，挂钩空着，准备挂东西。",
+    "interactive_props_specs": [
+      "Prop: Group of Gold Medals",
+      "Prop: Group of Silver Medals"
+    ]
   },
   {
     "page_id": 10,
-    "section": "Summary",
-    "text": "大家都数对啦！",
-    "narration": "太棒了！小兔子有5块，小熊有7块，小猴子有8块。你们真是数学小天才！",
-    "interaction_type": "none",
-    "visual_description": "三个小动物站在一起，头顶上方分别浮现出数字“5”、“7”、“8”。长颈鹿裁判在旁边竖起大拇指。背景在放烟花。"
+    "section": "Comparison",
+    "text": "哪一组更多？点击最大的一组。",
+    "narration": "仔细看。哪一组奖牌更多？点击数量最多那一组。",
+    "interaction_type": "click",
+    "scene_id": "scene_medal_rack",
+    "main_character_emotion": "thinking",
+    "visual_atmosphere_note": "靠在树干上的竹制搁架单元，现在展示着成排挂着的奖牌。",
+    "interactive_props_specs": [
+      "Prop: Row of 3 Gold Medals (Clickable)",
+      "Prop: Row of 4 Silver Medals (Clickable Target)"
+    ]
   },
   {
     "page_id": 11,
-    "section": "Summary",
-    "text": "这是你的冠军奖牌！",
-    "narration": "为了奖励你这么会数数，长颈鹿裁判也要给你发一块大大的金牌！快收下吧！",
-    "interaction_type": "click",
-    "visual_description": "屏幕正中央出现一块巨大的、闪闪发光的星星形状金牌。金牌上有“数学小明星”的字样。周围有星星特效在闪烁。"
+    "section": "Climax/Reward",
+    "text": "哇！我们全都数完了。把奖杯给获胜者！",
+    "narration": "哇！我们全都数完了。你真是个数学小冠军！把大奖杯拖到领奖台上吧。",
+    "interaction_type": "drag_and_drop",
+    "scene_id": "scene_forest_podium",
+    "main_character_emotion": "surprised",
+    "visual_atmosphere_note": "森林中阳光明媚的空地，树木之间挂着五颜六色的彩旗，三个树桩组成了领奖台。",
+    "interactive_props_specs": [
+      "Prop: A shiny Golden Trophy Cup",
+      "Prop: The Center Podium Stump (Target Zone)"
+    ]
   },
   {
     "page_id": 12,
-    "section": "Summary",
-    "text": "下次再见！",
-    "narration": "今天的数奖牌游戏真好玩！把你的金牌带回家，我们下次再见啦！",
+    "section": "Conclusion",
+    "text": "做得好！下次见！",
+    "narration": "今天做得太棒了！你数得真好。下次见，我们再一起玩！",
     "interaction_type": "none",
-    "visual_description": "所有的小动物和长颈鹿裁判一起向屏幕挥手告别。画面渐渐变暖，充满温馨的结束感。"
+    "scene_id": "scene_forest_podium",
+    "main_character_emotion": "cheering",
+    "visual_atmosphere_note": "森林中阳光明媚的空地，树木之间挂着五颜六色的彩旗，三个树桩组成了领奖台。",
+    "interactive_props_specs": null
   }
 ]
